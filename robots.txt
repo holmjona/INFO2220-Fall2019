@@ -1,0 +1,1 @@
+﻿#This is where we will tell Bots where to go or not.
