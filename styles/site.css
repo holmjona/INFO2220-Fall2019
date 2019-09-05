@@ -1,0 +1,60 @@
+﻿body {
+    
+}
+
+ul{
+    border: 3px ridge #3ac113; 
+}
+
+ul.fruit {
+    border: 3px ridge #3ac113;
+    border-color: #0d05b4;
+}
+.fruitItem {
+    border: 3px ridge #cf9e8e;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+}
+p{border: 2px solid #0F0;
+  background-color: #0A0;
+}
+
+p.pizza{
+    position: absolute;
+    top:50px;
+    right: 20px;
+}
+
+#paras {
+    border: 2px solid #FA0;
+    position: relative;
+    /*bottom: 30px;
+    left: 20px;*/
+}
+
+p.cars {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+p.food {
+    position: static;
+    top: 10px;
+    left: 20px;
+    margin-top: 3em;
+    margin-left: 2em;
+}
+
+ul.cars li{
+    display:inline;
+}
+ul.cars li::before {
+    content: "< ";
+}
+    ul.cars li::after {
+        content: " >";
+        color: #F00;
+        background-color: #AAA;
+    }
