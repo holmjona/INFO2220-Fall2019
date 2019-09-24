@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        strong{visibility:collapse;}
+        strong::after{
+            content:'This is weird';
+        }
+    </style>
+</head>
+<body>
+    <p>This is our <strong>awesome page</strong> for testing text.</p>
+    <div id="putStuff"></div>
+    <script>
+        var dStuff = document.getElementById("putStuff");
+        var newT1 = document.createTextNode("One");
+        var newT2 = document.createTextNode("Two");
+        var newT3 = document.createTextNode("Three");
+        var newP = document.createElement("p");
+        //alert("starting");
+        newP.appendChild(newT2);
+        newP.appendChild(newT3);
+
+        dStuff.appendChild(newT1);
+        dStuff.appendChild(newP);
+
+        alert(document.getElementsByTagName("p")[0].textContent);
+        alert(document.getElementsByTagName("p")[0].innerHTML);
+        alert(document.getElementsByTagName("p")[0].innerText);
+        alert(document.getElementsByTagName("p")[0].nodeValue);
+    </script>
+</body>
+</html>
