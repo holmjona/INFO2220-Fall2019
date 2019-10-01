@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button id="btnOne">Click Me</button>
+    <script>
+        var times = 1;
+        var btn = document.getElementById("btnOne");
+        //btn.onclick = doSomething;
+        //btn.addEventListener("click", doSomething);
+
+        btn.addEventListener("click", b);
+        btn.addEventListener("click", c);
+        btn.addEventListener("click", d);
+        btn.addEventListener("click", e);
+        btn.addEventListener("click", f);
+        btn.addEventListener("click", g);
+        btn.addEventListener("click", h);
+        btn.addEventListener("click", i);
+        btn.addEventListener("click", j);
+        btn.addEventListener("click", k);
+        btn.onclick = a;
+
+        btn.onclick = doSomething;
+        
+
+
+
+
+        function doSomething(e) {
+            alert("I was fired " + times + " times.");
+            times++;
+        }
+
+        function a() { alert("a");}
+        function b() { alert("b");}
+        function c() { alert("c");}
+        function d() {
+            var nn = 0;
+            while (nn < 1000000)
+                nn++;
+            alert("d");
+        }
+        function e() { alert("e");}
+        function f() { alert("f");}
+        function g() { alert("g");}
+        function h() { alert("h");}
+        function i() { alert("i");}
+        function j() { alert("j");}
+        function k() { alert("k");}
+
+    </script>
+</body>
+</html>
