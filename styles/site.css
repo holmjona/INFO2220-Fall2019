@@ -18,8 +18,8 @@ ul {
 }
 
 p {
-    border: 2px solid #0F0;
-    background-color: #0A0;
+    /*border: 2px solid #0F0;
+    background-color: #0A0;*/
 }
 
     p.pizza {
@@ -83,6 +83,11 @@ ul.cars li {
         color: #A0A;
     }
 
-li {
+.selected {
     color: #D30;
 }
+
+.awesome{
+    color: #A0A;
+}
+
