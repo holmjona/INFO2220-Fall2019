@@ -67,4 +67,61 @@
         me.children().show(1000);
     });
 
+
+    //$("li").mouseenter(mouseIn);
+    //$("ul").on("mouseleave", "li", function () {
+    //    $(this).removeClass("selected");
+    //    $(this).after($("<li>").text("I like Cheese"));
+    //});
+
+    $("li").click(function () {
+        //$.each($(this).siblings(), function () {
+        //    alert(this.innerText);
+        //});
+        //$.each($(this).prev(), function () {
+        //    alert(this.innerText);
+        //});
+        //$.each($(this).next(), function () {
+        //    alert(this.innerText);
+        //});
+        $.each($(this).prevAll(), function () {
+            alert(this.innerText);
+        });
+    });
+
+    //$("a").attr("href", "#");
+    $("a").click(function () {
+        //alert(this.innerHTML);
+        //var ans = confirm("Do you really want to leave?");
+        //if (!ans) {
+        //    return false;
+        //}
+     return   showModal(this,"Do you really want leave my awesome page?");
+    });
+
+    $("#modalYes").click(function () {
+        location.href = $(this).data("url");
+    });
+    $("#modalNo").click(function () {
+        $("#shadowBox").hide();
+    });
+
+    $("#modal a").off("click").click(function () {
+        $("#shadowBox").hide();
+    });
 });
+
+function showModal(lnk,message) {
+    var box = $("#shadowBox");
+        box.show();
+    var messBox = box.find("#message");
+    messBox.append($("<input>").val(message));
+    box.find("#modalYes").attr("data-url",lnk.href);
+    return false;
+}
+
+function mouseIn(e) {
+    e = e || window.event;
+    $(this).addClass("selected");
+    $(this).append($("<span>").text("I am in " + e.clientX + "|" +e.clientY));
+}
