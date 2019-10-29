@@ -1,0 +1,29 @@
+{
+  "succeeded": true,
+  "data": [
+    {
+      "name": "Fred Flintstone",
+      "address": "307 Bedrock Dr.",
+      "age": 36,
+      "color": "Orange"
+    },
+    {
+      "name": "Wilma Flintstone",
+      "address": "307 Bedrock Dr.",
+      "age": 32,
+      "color": "White"
+    },
+    {
+      "name": "Barney Rubble",
+      "address": "311 Bedrock Dr.",
+      "age": 34,
+      "color": "Brown"
+    },
+    {
+      "name": "Betty Rubble",
+      "address": "311 Bedrock Dr.",
+      "age": 30,
+      "color": "Blue"
+    }
+  ]
+}

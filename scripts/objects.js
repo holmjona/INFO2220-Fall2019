@@ -44,6 +44,7 @@ var lucid = function () {
 //alert(lucid());
 
 var objOne = { a: 15, b: 3 };
+objP.
 var c = objOne.a + objOne.b;
 
 function Person(){
